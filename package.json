@@ -16,6 +16,7 @@
         "prepare": "husky install"
     },
     "dependencies": {
+        "sass": "^1.62.1",
         "vue": "^3.2.45",
         "vue-router": "^4.1.6"
     },
