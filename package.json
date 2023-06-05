@@ -1,0 +1,45 @@
+{
+    "name": "vue-stucture",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc && vite build",
+        "lint": "npx eslint src/**/*.{vue,ts}",
+        "lint:fix": "npm run lint -- --fix",
+        "prettier": "npx prettier src/**/*.{vue,ts} --check",
+        "prettier:fix": "npm run prettier -- --write",
+        "pre-commit": "pnpm lint-staged --allow-empty",
+        "format": "npm run prettier:fix && npm run lint:fix",
+        "preview": "vite preview",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "vue": "^3.2.45",
+        "vue-router": "^4.1.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.20.12",
+        "@babel/eslint-parser": "^7.19.1",
+        "@babel/preset-env": "^7.20.2",
+        "@typescript-eslint/eslint-plugin": "^5.51.0",
+        "@typescript-eslint/parser": "^5.51.0",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "eslint": "^8.33.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.9.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.0",
+        "prettier": "2.8.4",
+        "typescript": "^4.9.5",
+        "vite": "^4.1.0",
+        "vue-tsc": "^1.0.24"
+    },
+    "lint-staged": {
+        "*.{ts, vue}": [
+            "npm run format"
+        ]
+    }
+}
