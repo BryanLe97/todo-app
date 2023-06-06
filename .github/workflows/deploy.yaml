@@ -13,12 +13,18 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+      
+      - name: Update apt
+      - run: sudo apt update
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        run: sudo apt install nodejs
+
+      - name: Setup npm
+      - run: sudo apt install npm
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: npm install
 
       - name: Build project
         run: npm run build
