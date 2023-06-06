@@ -15,16 +15,16 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Update apt
-      - run: sudo apt update
+        run: sudo apt update
 
       - name: Setup Node
         run: sudo apt install nodejs
 
       - name: Setup npm
-      - run: sudo apt install npm
+        run: sudo apt install npm
 
       - name: Install dependencies
-        uses: npm install
+        run: npm install
 
       - name: Build project
         run: npm run build
