@@ -1,6 +1,6 @@
 name: build
 on:
-  merge:
+  push:
     branches: [main]
 jobs:
   build:
