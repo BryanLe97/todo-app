@@ -1,22 +1,45 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import FooterPage from './components/TodoFooter.vue'
+import HeaderPage from './components/TodoHeader.vue';
 </script>
 
 <template>
-    <hello-world />
+    <div class="layout">
+		<div class="main">
+      <div class="main-header"> 
+        <header-page />
+      </div>
+      <div class="main-content"> 
+        <router-view />
+      </div>
+      <div class="main-footer"> 
+        <footer-page />
+      </div>
+    </div>
+  </div>
 </template>
 
-<style scoped>
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
+<style lang="scss" scoped>
+.layout {
+  .main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .main-header {
+      position: fixed;
+      height: 85px;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      background: #ffffff;
+      -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    }
+    .main-content {
+      flex: 1;
+      margin-top: 95px;
+    }
+  }
 }
 </style>

@@ -1,30 +1,7 @@
-<script setup lang="ts">
-// import { ref } from 'vue'
-// const photoCards = ref([
-
-// ])
-</script>
-
 <template>
   <div class="photo-card">
-    <div class="photo-card__header">
-      <div class="flex space-between container">
-        <div class="photo-card__name flex">
-          <img 
-            src="../assets/vue.svg" alt=""
-          />
-          <p>Minh Tuan</p>
-        </div>
-        <div class="photo-card__button">
-          <button>Indie Game</button>
-          <button>Entry Game</button>
-          <button>Community</button>
-        </div>
-      </div>
-    </div>
     <div class="photo-card__main">
       <div class="container">
-        <h2>Photo Cards:</h2>
         <div class="flex wrap photo-card__content">
           <div v-for="arr in 18" :key="arr" class="photo-card__block">
             <div class="photo-card__img">
@@ -68,12 +45,6 @@ button {
 }
 // primary
 .photo-card {
-  &__header {
-    background-color: $primary-clg;
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
-  }
   &__button {
     button:nth-child(-n + 2) {
       margin-right: 12px;
