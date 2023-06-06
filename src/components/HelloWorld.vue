@@ -10,7 +10,9 @@
     <div class="photo-card__header">
       <div class="flex space-between container">
         <div class="photo-card__name flex">
-          <img src="../assets/vue.svg" alt="" />
+          <img 
+            src="../assets/vue.svg" alt=""
+          />
           <p>Minh Tuan</p>
         </div>
         <div class="photo-card__button">
