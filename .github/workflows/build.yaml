@@ -1,0 +1,12 @@
+name: build
+on
+  push:
+    branches: [stag]
+jobs:
+  build-dist:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm run build
+      - run: git add dist
+      - run: git commit -m "build"
+      - run: git push origin/main
