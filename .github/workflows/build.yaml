@@ -6,6 +6,7 @@ jobs:
   build-dist:
     runs-on: ubuntu-latest
     steps:
+      - run: npm install
       - run: npm run build
       - run: git add dist
       - run: git commit -m "build"
