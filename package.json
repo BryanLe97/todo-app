@@ -40,7 +40,9 @@
     },
     "lint-staged": {
         "*.{ts, vue}": [
-            "npm run format"
+            "npm run format",
+            "git add .",
+            "git commit -m 'format code'"
         ]
     }
 }
