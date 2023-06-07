@@ -1,8 +1,8 @@
 
 export default [
     {
-        path: '',
+        path: '/',
         name: 'home-page',
-        component: import('./HomePageView.vue'),
+        component: () => import('./HomePageView.vue'),
     }
 ]
