@@ -90,7 +90,7 @@ button:focus-visible {
   text-align: center;
 }
 .container {
-  margin: 0 160px;
+  margin: 0 5rem;
 }
 @media (prefers-color-scheme: light) {
   :root {
