@@ -38,7 +38,7 @@ import HeaderPage from './components/TodoHeader.vue';
     }
     .main-content {
       flex: 1;
-      margin-top: 95px;
+      margin-top: 82px;
     }
   }
 }

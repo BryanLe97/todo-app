@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import { ref } from "vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="header container">
@@ -19,7 +17,7 @@ import { ref } from "vue";
   &__icon {
     flex-grow: 1;
     height: 82px;
-    object-fit: cover;
+    object-fit: contain;
   }
   &__content {
     flex-grow: 1;
