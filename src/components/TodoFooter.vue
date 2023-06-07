@@ -1,11 +1,10 @@
+<script setup lang="ts">
+import dateConvert from "../composables/concertDate";
+</script>
 <template>
   <div class="footer">
     <div class="container flex">
-      <p>
-        coppy right {{ new Date().getFullYear() }}/{{
-          new Date().getMonth() + 1
-        }}/{{ new Date().getDate() }}
-      </p>
+      <p>copy right {{ dateConvert(new Date()) }}</p>
     </div>
   </div>
 </template>

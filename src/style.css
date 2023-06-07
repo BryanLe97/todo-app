@@ -3,7 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.container {
+  margin: 0 20%;
+}
 html {
   font-size: 62.5%;
   position: relative;
