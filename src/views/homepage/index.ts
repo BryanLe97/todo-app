@@ -1,7 +1,7 @@
 
 export default [
     {
-        path: '/',
+        path: '',
         name: 'home-page',
         component: import('./HomePageView.vue'),
     }
