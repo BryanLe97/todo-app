@@ -1,8 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Homepage from "../views/homepage/";
-const router = createRouter({
-  history: createWebHistory(),
+
+export default createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [...Homepage],
 });
-
-export default router;
