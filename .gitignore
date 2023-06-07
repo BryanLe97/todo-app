@@ -1,4 +1,4 @@
 node_modules/*
-pnpm-lock.yaml
 dist/*
+pnpm-lock.yaml
 .github/*
