@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HomeBanner from './component/HomeBanner.vue'
+import HomeBanner from "./component/HomeBanner.vue";
 </script>
 <template>
   <div class="content">
@@ -9,7 +9,7 @@ import HomeBanner from './component/HomeBanner.vue'
         <div class="flex wrap content__content">
           <div v-for="arr in 18" :key="arr" class="content__block">
             <div class="content__img">
-              <img src="/src/assets/img.jpg" alt="" />
+              © <img src="/src/assets/img.jpg" alt="" />
             </div>
             <p>this is a long test</p>
           </div>
@@ -55,7 +55,7 @@ import HomeBanner from './component/HomeBanner.vue'
       object-fit: cover;
     }
   }
-  &__main{
+  &__main {
     & div {
       margin-bottom: 2vw;
     }

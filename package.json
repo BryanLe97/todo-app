@@ -13,7 +13,7 @@
         "pre-commit": "pnpm lint-staged --allow-empty",
         "format": "npm run prettier:fix && npm run lint:fix",
         "preview": "vite preview",
-        "prepare": "husky install"
+        "prepare": "husky install && npm install -g gitmoji-cli"
     },
     "dependencies": {
         "sass": "^1.62.1",
