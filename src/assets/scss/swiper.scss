@@ -1,0 +1,29 @@
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px; // Adjust as needed
+  text-align: center;
+}
+
+// Animation for sliding effect
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+// Add more styles for navigation arrows, pagination, etc. as needed
