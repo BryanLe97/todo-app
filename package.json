@@ -1,5 +1,5 @@
 {
-    "name": "vue-stucture",
+    "name": "vue-structure",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -13,7 +13,7 @@
         "pre-commit": "pnpm lint-staged --allow-empty",
         "format": "npm run prettier:fix && npm run lint:fix",
         "preview": "vite preview",
-        "prepare": "husky install"
+        "prepare": "husky install && npm install -g gitmoji-cli"
     },
     "dependencies": {
         "sass": "^1.62.1",
@@ -25,6 +25,7 @@
         "@babel/core": "^7.20.12",
         "@babel/eslint-parser": "^7.19.1",
         "@babel/preset-env": "^7.20.2",
+        "@types/node": "^20.10.3",
         "@typescript-eslint/eslint-plugin": "^5.59.9",
         "@typescript-eslint/parser": "^5.59.9",
         "@vitejs/plugin-vue": "^4.0.0",
